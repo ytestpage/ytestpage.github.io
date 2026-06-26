@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXP 智能交易终端</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            overflow: hidden;
+            background-color: #0b221e;
+        }
+
+        /* 全屏背景图片设置 */
+        .hero-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url('EXP官网假想 - 绿色底.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* 左下角文本样式 */
+        .bottom-left-text {
+            position: absolute;
+            bottom: 40px;
+            left: 5%;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: lowercase;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            z-index: 2;
+        }
+
+        /* 移动端稍微调整间距 */
+        @media (max-width: 768px) {
+            .bottom-left-text {
+                bottom: 20px;
+                left: 20px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-container">
+        <!-- 只在左下角显示文本 -->
+        <div class="bottom-left-text">expedition</div>
+    </div>
+
+</body>
+</html>
